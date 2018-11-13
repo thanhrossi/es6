@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Spread</title>
+</head>
+<body>
+    <pre>
+        let arr1 = ['hih', 30, false];
+        
+        
+    </pre>
+    <script>
+        let arr1 = ['hih', 30, false];
+        // let name = arr1[0];
+        // let id = arr1[1];
+        // let stt = arr1[2];
+        // console.log(name + '--' +id+ '--'+ stt);
+
+        let[name, id , stt] = arr1;
+        console.log(name + 'c--' +id+ '--'+ stt);
+        //  tạo các mảng biến tương ứng gán cho mảng tương ứng
+
+        let obj = {
+            name2: "concac",
+            id2: 3,
+            stt2: false
+        }
+
+        let{name2, id2, stt2, createdBy = "admin"} = obj;
+        console.log(name2 + '--' +id2+ '--'+ stt2 + '--' + createdBy);
+    </script>
+</body>
+</html>

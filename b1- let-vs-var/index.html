@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Let vs var</title>
+</head>
+<body>
+    
+    <div class="jumbotron">
+        <h1 class="display-3">Let vs var</h1>
+       
+        <h2>Var </h2>
+        <pre>
+            var score = 100;
+            if(score> 100) {
+                var msg = "WIN";
+                console.log(msg);
+            }
+            console.log(score);
+            console.log(msg);
+        </pre>
+    </div>
+    <script>
+    
+            // var score = 100;
+            // if(score> 50) {
+            //     var msg = "WIN";
+            //     // console.log(msg);
+            // }
+            // console.log(score);
+            // console.log(msg);
+            // // Var thay đổi 
+
+            let score = 100;
+            if(score> 50) {
+                var let = "WIN";
+                // console.log(msg);
+            }
+            console.log(score);
+            console.log(msg);
+            // let chỉ hoạt động trong scope của nó
+    </script>
+</body>
+</html>

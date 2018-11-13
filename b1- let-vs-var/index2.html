@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .wrap {
+            width: 500px;
+            margin: 0 auto;
+        }
+        #content {
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            grid-column-gap: 3px;
+        }
+        #content > p{
+            width: 50px;
+            height: 50px;
+            background: #000;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <button onclick="draw()">Draw</button>
+        <button onclick="clear()">Clear</button>
+        <div id="content">
+
+        </div>
+    </div>
+    <script>
+        function clear(){
+            var content = document.getElementById('content');
+            content.innerHTML = '';
+        }
+
+        function draw(){
+            var content = document.getElementById('content');
+            for(let i = 1; i<= 10; i++) {
+                var el = document.createElement("p");
+                el.innerHTML = i;
+                content.appendChild(el);
+                el.onclick = function(){
+                   alert(i)
+                }
+            }
+        }
+        
+    </script>
+</body>
+</html>
